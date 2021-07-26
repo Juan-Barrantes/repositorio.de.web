@@ -39,7 +39,21 @@
     <p>
         damos enter enter hasta q salga la llave que es un gráfico medio raro xd 
     </p>
-    <p> para ver donde está la llave hacemos: cd ~/ .ssh  y entre y luego una vez estando en esa dirección le damos  ls para ver </p>
-    <p>OBS: </p>
+    <p> para ver donde está la llave hacemos: cd ~/.ssh  y entre y luego una vez estando en esa dirección le damos  ls para ver </p>
+    <p>OBS: el primer id que sale es el local, es super no lo compartas por NADA, y el otro que termina en punto pub (.pub) es tu llave pública </p>
+    <h4>debemos verificar q tengamos nuestro servidor ssh correindo</h4>
+    <p>eval "$(ssh-agent -s)"</p>
+    <p>si dice: Agent pid ###(algun numero) ; quiere decir que tu servidor de llave ssh está corriendo  :3</p>
+    <h4>ahroa agregamos la llave privada a este servidor</h4>
+    <p>ssh-add ~/.ssh/nuestra llave privada</p>
+    <h4>agregamos nuestra llave publica en github</h4>
+    <p>entramos a github, vamos a 'Settings', luego buscamos 'SSH and GPG keys', ahora vamos dentro de la terminal y para agregar la llave publica antes ingresamos: sudo apt install xclip (nos permitirá hacerlo de forma segura)</p>
+    <p>luego hacemos en la terminal --> xclip -selection clipboard <~/.ssh/id_rsa.pub ; es para copiar en el portapapeles la llave publica de manera segura</p>
+    <p>luego me voy al gitHub, le doy en nueba llave (new key), ingreso un nombre para nuestra llavecita  :3  y en donde dice 'Add SSH key' ingresamo nuestra llave publica que ya tenemos en el portapapeles</p>
+    <h3>ahora subiremos al respositorio lo q hemos hecho  ._.</h3>
+
+
+
+
 </body>
 </html>
